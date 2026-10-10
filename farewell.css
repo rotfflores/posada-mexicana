@@ -1,0 +1,41 @@
+/* Patio iluminado para cerrar la invitación. */
+.farewell-section { position: relative; isolation: isolate; overflow: hidden; min-height: 850px; padding: 255px 44px 0; background: #235C45; color: #FFF6E5; text-align: center; }
+.farewell-section::before { content: ""; position: absolute; z-index: -1; inset: 0; background: url("assets/cream-paper.png") center / 800px auto repeat; mix-blend-mode: soft-light; opacity: .17; pointer-events: none; }
+.farewell-section::after { content: ""; position: absolute; z-index: -1; inset: 20px 20px 30px; border: 1px solid #E8AC4555; border-radius: 105px 105px 4px 4px; pointer-events: none; }
+.farewell-ornament { position: absolute; z-index: -1; inset: 0; background: url("assets/share-ornament.svg") center / 180px 180px repeat; opacity: .075; pointer-events: none; }
+.farewell-canopy { position: absolute; top: -6px; left: 50%; translate: -50% 0; width: max(100%, 1100px); height: 191px; pointer-events: none; }
+.farewell-papel { position: absolute; top: 91px; left: 50%; translate: -50% 0; width: max(100%, 1030px); height: 112px; pointer-events: none; filter: drop-shadow(0 4px 2px #0D322E50); }
+.farewell-pinata { position: absolute; z-index: 1; left: max(18px, calc(50% - 665px)); top: 248px; width: 150px; height: 180px; transform-origin: 50% 0; animation: farewell-sway 8s ease-in-out infinite; pointer-events: none; filter: drop-shadow(0 7px 4px #102C2140); }
+.farewell-star { position: absolute; width: 43px; height: 69px; pointer-events: none; }.farewell-star-one { left: max(168px, calc(50% - 490px)); top: 280px; }.farewell-star-two { right: max(35px, calc(50% - 545px)); top: 336px; width: 35px; height: 56px; }
+.farewell-copy { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; transition: opacity .7s ease, transform .7s ease; }
+.farewell-motion-ready .farewell-copy:not(.farewell-revealed) { opacity: 0; transform: translateY(20px); }
+.farewell-eyebrow { display: flex; align-items: center; justify-content: center; gap: 13px; color: #F4CC80; font-size: 11px; font-weight: 600; letter-spacing: .13em; line-height: 1.8; text-transform: uppercase; margin: 0 0 27px; }
+.farewell-eyebrow::before, .farewell-eyebrow::after { content: ""; width: 29px; height: 1px; flex: 0 0 29px; background: #E8AC4590; }
+.farewell-title { max-width: 730px; margin: 0 auto 30px; color: #FFF6E5; font: 400 clamp(43px, 5.4vw, 72px)/1.14 var(--serif); letter-spacing: -.033em; text-wrap: balance; text-shadow: 0 3px 0 #103B2A; }
+.farewell-message { max-width: 530px; margin: 0 auto 31px; color: #F5EAD7; font-size: 16px; line-height: 1.95; text-wrap: pretty; }
+.farewell-signature { margin: 0 auto; color: #FFF1D3; font: 400 18px/1.75 var(--serif); }
+.farewell-signature span { display: block; }.farewell-signature .farewell-family { color: #FFF6E5; font-size: clamp(26px, 3vw, 34px); }
+.farewell-signature-flourish { display: block; width: 163px; height: 59px; margin: 12px auto 24px; }
+.farewell-footer a:focus-visible { outline: 3px solid #FFD175; outline-offset: 4px; }
+.farewell-footer { position: relative; z-index: 2; max-width: 850px; margin: 84px auto 0; padding: 34px 0 44px; color: #F6E6C9; font-size: 12px; line-height: 1.8; }
+.farewell-footer::before { content: ""; display: block; height: 5px; margin-bottom: 27px; background: linear-gradient(90deg, transparent, #E8AC4570 24%, #E8AC45 49%, #E8AC4570 76%, transparent); clip-path: polygon(0 40%, 48% 40%, 50% 0, 52% 40%, 100% 40%, 100% 60%, 52% 60%, 50% 100%, 48% 60%, 0 60%); }
+.farewell-footer p { margin: 0; }.farewell-footer a { color: #FFF6E5; text-decoration-color: #E8AC45; text-underline-offset: 3px; font-weight: 600; }.farewell-footer a:hover { color: #FFD175; }
+.farewell-flowers { position: absolute; width: 180px; height: 140px; bottom: 72px; pointer-events: none; filter: drop-shadow(0 6px 4px #12332555); }.farewell-flowers-left { left: 23px; }.farewell-flowers-right { right: 23px; transform: scaleX(-1); }
+.farewell-ribbon { position: absolute; width: 145px; height: 80px; bottom: 84px; pointer-events: none; }.farewell-ribbon-left { left: 123px; rotate: 15deg; }.farewell-ribbon-right { right: 123px; transform: scaleX(-1); rotate: -15deg; }
+.farewell-section .seam-talavera { height: 29px; }
+@keyframes farewell-sway { 0%, 100% { transform: rotate(-1.5deg); } 50% { transform: rotate(1.5deg); } }
+@media (max-width: 760px) {
+  .farewell-section { min-height: 0; padding: 261px 31px 0; }
+  .farewell-section::after { inset: 14px 14px 24px; border-radius: 70px 70px 3px 3px; }
+  .farewell-canopy { width: 930px; height: 156px; }.farewell-papel { width: 850px; top: 68px; height: 100px; }
+  .farewell-pinata { left: 5px; top: 182px; width: 68px; height: 82px; }.farewell-star-one { left: 73px; top: 199px; width: 22px; height: 37px; }.farewell-star-two { right: 16px; top: 190px; width: 20px; height: 33px; }
+  .farewell-eyebrow { font-size: 9px; letter-spacing: .08em; gap: 7px; margin-bottom: 21px; }.farewell-eyebrow::before, .farewell-eyebrow::after { width: 11px; flex-basis: 11px; }
+  .farewell-title { font-size: clamp(38px, 10.2vw, 54px); line-height: 1.18; margin-bottom: 24px; }
+  .farewell-message { font-size: 14px; line-height: 1.9; margin-bottom: 26px; }
+  .farewell-footer { margin-top: 66px; padding-bottom: 48px; }.farewell-flowers { width: 82px; height: 70px; bottom: 55px; }.farewell-flowers-left { left: 2px; }.farewell-flowers-right { right: 2px; }
+  .farewell-ribbon { width: 76px; height: 45px; bottom: 78px; }.farewell-ribbon-left { left: 32px; }.farewell-ribbon-right { right: 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .farewell-section *, .farewell-section *::before, .farewell-section *::after { animation: none !important; transition: none !important; }
+  .farewell-section .farewell-copy { opacity: 1 !important; transform: none !important; }
+}

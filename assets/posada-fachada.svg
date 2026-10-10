@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540">
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F1CBA1"/><stop offset="1" stop-color="#E7AC85"/></linearGradient>
+    <linearGradient id="patio" x2="0" y2="1"><stop stop-color="#E8AC45"/><stop offset=".43" stop-color="#314F37"/><stop offset="1" stop-color="#173D2D"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#FFF1B5" stop-opacity=".9"/><stop offset="1" stop-color="#E8AC45" stop-opacity="0"/></radialGradient>
+    <pattern id="tile" width="32" height="32" patternUnits="userSpaceOnUse"><path fill="#FFF6E5" d="M0 0h32v32H0z"/><path fill="none" stroke="#235C45" d="M1 1h30v30H1z"/><path fill="#C83B32" d="M16 4q-7 4 0 12 7-8 0-12ZM28 16q-4-7-12 0 8 7 12 0ZM16 28q7-4 0-12-7 8 0 12ZM4 16q4 7 12 0-8-7-12 0Z"/><circle cx="16" cy="16" r="3" fill="#E8AC45"/></pattern>
+    <g id="flag"><path fill="currentColor" d="M0 0h42v32l-7 6-7-6-7 6-7-6-7 6-7-6Z"/><path d="M10 9h22M8 22h26" stroke="#FFF6E5" stroke-width="2"/><path fill="#FFF6E5" d="M21 11c-8-8-15 2-7 7l7 6 7-6c8-5 1-15-7-7Z"/></g>
+    <g id="flower"><path fill="#C83B32" stroke="#FFF6E5" stroke-width="1" d="M0 0Q-27-38-2-52Q21-35 0 0ZM0 0Q32-39 50-16Q32 10 0 0ZM0 0Q49 17 24 40Q-4 24 0 0ZM0 0Q-12 50-33 25Q-21-2 0 0ZM0 0Q-50-5-28-27Q-4-24 0 0Z"/><g fill="#E8AC45"><circle r="7"/><circle cx="6" cy="-3" r="3"/><circle cx="-5" cy="4" r="3"/></g></g>
+    <g id="paper-point">
+      <path d="M-16-17 0-66 16-17Z" fill="currentColor" stroke="#FFF6E5" stroke-width="1"/>
+      <path d="m-5-48 10 0m-14 10h18m-22 11h26" stroke="#FFF6E5" stroke-width="2.5" opacity=".55"/>
+      <path d="m-9-38 2 5m3-5 1 5m5-5-1 5m5-5-2 5m-15 6 2 5m3-5 1 5m4-5-1 5m5-5-2 5" stroke="#FFF6E5" stroke-width="1" opacity=".8"/>
+    </g>
+    <g id="farolito">
+      <circle cy="12" r="34" fill="url(#glow)"/>
+      <path d="M0-25v15" stroke="#805F3E" stroke-width="1.5"/>
+      <path d="m0-10 17 12-4 23h-26L-17 2Z" fill="#C83B32" stroke="#FFF6E5" stroke-width="1.5"/>
+      <path d="M-10 4h20v17h-20Z" fill="#FFDD88"/>
+      <path d="M0-7v32M-17 2h34M-13 25h26" stroke="#E8AC45" stroke-width="2"/>
+      <path d="M0 26v9m-4-2h8" stroke="#C83B32" stroke-width="1.5"/>
+    </g>
+    <g id="velita">
+      <circle cy="-18" r="18" fill="url(#glow)"/>
+      <ellipse cy="14" rx="10" ry="3" fill="#C83B32"/>
+      <path d="M-4-12h8v25h-8Z" fill="#FFF6E5" stroke="#E8AC45"/>
+      <path d="M0-12v-5" stroke="#76563D"/>
+      <path d="M0-30Q-8-19 0-17Q8-20 0-30Z" fill="#E8AC45"/>
+      <path d="M0-24Q-3-18 0-18Q3-18 0-24Z" fill="#FFF6E5"/>
+    </g>
+  </defs>
+  <ellipse cx="300" cy="470" rx="245" ry="27" fill="#6B4124" opacity=".11"/>
+  <path d="M45 466h510l-84 61H116Z" fill="#D6A374" opacity=".28"/>
+  <g stroke="#BD835C" stroke-width="1" opacity=".5"><path d="M86 480h428M107 497h387M138 516h325M237 466l-24 61M363 466l25 61"/></g>
+  <path d="M57 451V153L300 92l243 61v298Z" fill="url(#wall)"/>
+  <path d="M49 157v-19L300 74l251 64v19L300 103Z" fill="#C83B32"/>
+  <path d="M56 153v-10L300 84l244 59v10L300 94Z" fill="#FFF6E5" opacity=".45"/>
+  <path d="M58 165h485v25H58Z" fill="url(#tile)"/>
+  <path d="M58 421h485v30H58Z" fill="url(#tile)"/>
+  <path d="M182 451V279a118 118 0 0 1 236 0v172Z" fill="#C83B32"/>
+  <path d="M196 451V279a104 104 0 0 1 208 0v172Z" fill="#FFF6E5"/>
+  <path d="M210 451V279a90 90 0 0 1 180 0v172Z" fill="url(#patio)"/>
+  <path d="M224 451V281a76 76 0 0 1 152 0v170Z" fill="none" stroke="#E8AC45" stroke-width="2"/>
+  <circle cx="300" cy="247" r="80" fill="url(#glow)" opacity=".65"/>
+  <path d="M300 192v28" stroke="#FFF6E5" stroke-width="2"/><path d="m281 230 19-18 19 18-9 30h-20Z" fill="#E8AC45" stroke="#FFF0BF" stroke-width="2"/><path d="M300 216v44M284 230h32" stroke="#FFF6E5" opacity=".65"/>
+  <path d="M228 305h144v145H228Z" fill="#235C45" opacity=".5"/>
+  <!-- Piñata tradicional: siete conos, capas de papel de china y listones. -->
+  <path d="M300 277v24" fill="none" stroke="#FFF6E5" stroke-width="1.5"/>
+  <g transform="translate(300 349) scale(.82)">
+    <use href="#paper-point" style="color:#C83B32"/>
+    <use href="#paper-point" transform="rotate(51.4286)" style="color:#E8AC45"/>
+    <use href="#paper-point" transform="rotate(102.8571)" style="color:#235C45"/>
+    <use href="#paper-point" transform="rotate(154.2857)" style="color:#C83B32"/>
+    <use href="#paper-point" transform="rotate(205.7143)" style="color:#E8AC45"/>
+    <use href="#paper-point" transform="rotate(257.1429)" style="color:#235C45"/>
+    <use href="#paper-point" transform="rotate(308.5714)" style="color:#C83B32"/>
+    <circle r="29" fill="#E8AC45" stroke="#FFF6E5" stroke-width="2" stroke-dasharray="2 2"/>
+    <circle r="22" fill="#C83B32" stroke="#FFF6E5" stroke-width="2" stroke-dasharray="1 3"/>
+    <circle r="14" fill="#FFF6E5" stroke="#235C45" stroke-width="5" stroke-dasharray="3 1"/>
+    <circle r="6" fill="#E8AC45"/>
+    <g fill="none" stroke-width="3"><path d="M-9 43q-8 13-1 26t-5 25" stroke="#E8AC45"/><path d="M6 44q9 13 1 24t5 29" stroke="#C83B32"/><path d="M-1 44v50" stroke="#FFF6E5"/></g>
+  </g>
+  <path d="M209 451V281q0-45 24-64v234ZM391 451V281q0-45-24-64v234Z" fill="#235C45" stroke="#173D2D" stroke-width="2"/>
+  <g stroke="#E8AC45" stroke-width="1.3" fill="none"><path d="M219 290v142M226 289v143M374 289v143M381 290v142M213 342h19M368 342h19"/></g>
+  <path d="M196 451h208v12H196Z" fill="#C83B32"/><path d="M186 463h228v10H186Z" fill="#A8392F"/><path d="M176 473h248v9H176Z" fill="#CE7150"/>
+  <g fill="#235C45" stroke="#FFF6E5" stroke-width="5"><path d="M87 327V256a33 33 0 0 1 66 0v71Z"/><path d="M447 327V256a33 33 0 0 1 66 0v71Z"/></g>
+  <g stroke="#E8AC45" stroke-width="1.5" fill="none"><path d="M97 267h46v49H97ZM120 235v88M92 282h57M458 267h44v49h-44ZM480 235v88M452 282h56"/></g>
+  <g fill="#C83B32"><path d="M82 327h77v13H82ZM441 327h77v13h-77Z"/></g>
+  <path d="M39 184Q300 327 562 184" fill="none" stroke="#805F3E" stroke-width="1.5"/>
+  <use href="#flag" x="65" y="196" transform="rotate(23 86 196)" style="color:#235C45"/>
+  <use href="#flag" x="132" y="223" transform="rotate(15 153 223)" style="color:#C83B32"/>
+  <use href="#flag" x="199" y="242" transform="rotate(8 220 242)" style="color:#E8AC45"/>
+  <use href="#flag" x="266" y="254" style="color:#235C45"/>
+  <use href="#flag" x="333" y="250" transform="rotate(-6 354 250)" style="color:#C83B32"/>
+  <use href="#flag" x="400" y="233" transform="rotate(-14 421 233)" style="color:#E8AC45"/>
+  <use href="#flag" x="467" y="205" transform="rotate(-23 488 205)" style="color:#235C45"/>
+  <path d="M26 157Q300 226 577 157" fill="none" stroke="#6E6244" stroke-width="1.2"/>
+  <g fill="#FFF0AD" stroke="#E8AC45" stroke-width="1"><path d="M77 168v13M166 184v13M256 191v13M346 191v13M436 184v13M526 168v13"/><ellipse cx="77" cy="184" rx="4" ry="6"/><ellipse cx="166" cy="200" rx="4" ry="6"/><ellipse cx="256" cy="207" rx="4" ry="6"/><ellipse cx="346" cy="207" rx="4" ry="6"/><ellipse cx="436" cy="200" rx="4" ry="6"/><ellipse cx="526" cy="184" rx="4" ry="6"/></g>
+  <g fill="#E8AC45" opacity=".45"><circle cx="77" cy="184" r="11"/><circle cx="166" cy="200" r="11"/><circle cx="256" cy="207" r="11"/><circle cx="346" cy="207" r="11"/><circle cx="436" cy="200" r="11"/><circle cx="526" cy="184" r="11"/></g>
+  <use href="#farolito" transform="translate(162 354) scale(.9)"/><use href="#farolito" transform="translate(438 354) scale(.9)"/>
+  <path d="M136 435h39v7h-39Z" fill="#C83B32"/>
+  <use href="#velita" transform="translate(146 421)"/><use href="#velita" transform="translate(164 426) scale(.7)"/>
+  <!-- Mesa de ponche: olla de barro, jarritos, fruta y vapor. -->
+  <g transform="translate(-25 29)">
+    <path d="M411 440h81v7h-81ZM419 447h5v26h-5ZM480 447h5v26h-5Z" fill="#8C5639"/>
+    <path d="M409 436h85v7h-85Z" fill="#C83B32"/>
+    <path d="M413 439h77v12l-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5Z" fill="#FFF6E5"/>
+    <path d="M440 409q-9 13-2 23 3 6 16 6t17-6q6-11-3-23Z" fill="#B6653E" stroke="#81452F" stroke-width="1.5"/>
+    <ellipse cx="454" cy="410" rx="15" ry="5" fill="#6A3625" stroke="#E8AC45" stroke-width="2"/>
+    <ellipse cx="454" cy="411" rx="11" ry="2.5" fill="#DDA147"/>
+    <path d="M437 414q-12-3-10 6t11 5M470 414q12-3 10 6t-11 5" fill="none" stroke="#81452F" stroke-width="3"/>
+    <path d="M441 429q13 6 27 0" fill="none" stroke="#FFF6E5" stroke-width="1.5"/>
+    <path d="m462 410 8-20" stroke="#805F3E" stroke-width="2"/>
+    <g fill="none" stroke="#FFF6E5" stroke-width="2" stroke-linecap="round" opacity=".85"><path d="M448 400q-7-6 0-12t-1-12M458 401q-6-6 0-12"/></g>
+    <path d="M415 424h14l-2 12h-10Z" fill="#B6653E" stroke="#81452F"/><ellipse cx="422" cy="424" rx="7" ry="2" fill="#E8AC45"/><path d="M429 425q8 0 4 7h-5" fill="none" stroke="#81452F" stroke-width="2"/>
+    <circle cx="482" cy="432" r="4" fill="#E8AC45"/><circle cx="488" cy="432" r="3" fill="#C83B32"/>
+  </g>
+  <g fill="#235C45"><path d="M79 432Q36 411 40 371Q88 372 79 432ZM82 425Q103 379 128 394Q129 427 82 425ZM498 429Q459 401 475 375Q510 384 498 429ZM506 430Q515 383 550 389Q549 426 506 430Z"/></g>
+  <use href="#flower" transform="translate(64 383) scale(.66)"/><use href="#flower" transform="translate(103 399) scale(.56)"/><use href="#flower" transform="translate(481 394) scale(.65)"/><use href="#flower" transform="translate(529 381) scale(.6)"/>
+  <path d="M44 422h78l-12 52H57Z" fill="#C76E4E" stroke="#AA5139" stroke-width="2"/><path d="M460 422h78l-12 52h-53Z" fill="#C76E4E" stroke="#AA5139" stroke-width="2"/>
+  <path d="M48 427h70M464 427h70" stroke="#FFF6E5" stroke-width="3" opacity=".7"/>
+  <path d="M147 82v-8M451 82v-8" stroke="#E8AC45" stroke-width="2"/><g fill="#E8AC45"><path d="m147 52 4 12 13 2-10 8 2 13-9-7-10 7 3-13-10-8 13-2ZM451 52l4 12 13 2-10 8 2 13-9-7-10 7 3-13-10-8 13-2Z"/></g>
+</svg>

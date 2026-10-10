@@ -1,0 +1,12 @@
+{
+  "name": "posada-mexicana",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Invitación familiar a una posada mexicana con bienvenida, fecha y cuenta regresiva.",
+  "scripts": {
+    "dev": "node server.cjs",
+    "start": "node server.cjs",
+    "check": "node --check script.js && node --check content.js && node --check countdown.js && node --check location.js && node --check location-content.js && node --check activities.js && node --check activities-content.js && node --check sharing.js && node --check sharing-content.js && node --check rsvp-content.js && node --check rsvp-message.js && node --check rsvp.js && node --check farewell-content.js && node --check farewell.js && node --check festive-lights.js && node --check music.js && node --check server.cjs",
+    "test": "node --test countdown.test.cjs rsvp-message.test.cjs rsvp-form.test.cjs"
+  }
+}

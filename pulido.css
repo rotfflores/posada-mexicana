@@ -1,0 +1,45 @@
+/* Pulido final: guirnaldas completas con fila trasera, costuras entre secciones y movimiento en los adornos colgantes. */
+.marigold { color: var(--marigold); }
+.flag-back { opacity: .92; filter: drop-shadow(1px 2px 1px #6D3E1D12); }
+
+/* Las guirnaldas conservan su proporción para que ninguna bandera quede cortada. */
+.welcome-garland, .loc-papel-string { height: auto !important; aspect-ratio: 1440 / 220; }
+.act-papel { height: auto !important; aspect-ratio: 1440 / 155; }
+.welcome-garland { top: -44px; }
+.welcome-section { padding-top: 186px; }
+.loc-papel-string { top: -40px; }
+.loc-section { padding-top: 204px; }
+.act-section { padding-top: 268px; }
+
+/* Festón rojo que cuelga de la nota hacia la confirmación. */
+.seam { position: absolute; z-index: 1; top: 0; left: 0; right: 0; height: 26px; pointer-events: none; }
+.seam-red {
+  background:
+    radial-gradient(circle at 50% 0, #C83B32 0 13px, transparent 13.5px) 0 0 / 32px 15px repeat-x,
+    radial-gradient(circle at 50% 0, #E8AC45 0 2.5px, transparent 3px) 0 13px / 32px 9px repeat-x;
+}
+
+/* Cenefa de talavera que cierra la invitación, igual que las otras uniones. */
+.seam-talavera { top: auto; bottom: 0; height: 32px; border-top: 3px solid var(--red); border-bottom: 3px solid var(--green); background: var(--cream) url("assets/talavera.svg") left center / 28px 28px repeat-x; }
+
+/* Estrellas y adornos colgantes se mecen como si los moviera el aire. */
+.loc-paper-star, .rsvp-edge-star, .act-brass-stars, .share-stars { transform-origin: 50% 0; }
+.loc-paper-star, .rsvp-edge-star { animation: hang-swing 5.5s ease-in-out infinite; }
+.loc-paper-star-right, .rsvp-edge-star-right { animation-delay: -2.7s; }
+.act-brass-stars, .share-stars { animation: hang-rotate 6.5s ease-in-out infinite; }
+.act-brass-stars-right, .share-stars-right { animation-delay: -3.1s; }
+@keyframes hang-swing { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes hang-rotate { 0%, 100% { rotate: -3deg; } 50% { rotate: 3deg; } }
+
+@media (max-width: 600px) {
+  .welcome-garland { top: -14px; }
+  .welcome-section { padding-top: 130px; }
+  .loc-papel-string { top: -22px; }
+  .loc-section { padding-top: 150px; }
+  .act-section { padding-top: 220px; }
+  .seam-red { height: 20px; }
+  .seam-red { background-size: 24px 11px, 24px 9px; background-position: 0 0, 0 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loc-paper-star, .rsvp-edge-star, .act-brass-stars, .share-stars { animation: none !important; }
+}

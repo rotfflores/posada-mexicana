@@ -1,0 +1,15 @@
+/* Un mismo foco y cuatro circuitos para todas las guirnaldas de la invitación. */
+.lights-unified .act-light-soft,
+.lights-unified .share-light,
+.lights-unified .share-light-breath { animation: none !important; opacity: 1 !important; }
+.fiesta-lamp { color: var(--fiesta-color); animation: fiesta-light-sequence 3.2s steps(1, end) infinite; animation-delay: var(--fiesta-delay); animation-play-state: paused; }
+.fiesta-lights-running .fiesta-lamp { animation-play-state: running; }
+.fiesta-lamp .fiesta-lamp-halo { fill: currentColor; opacity: .18; filter: blur(5px); }
+.fiesta-lamp .fiesta-lamp-cap { fill: #A58B62; stroke: none; }
+.fiesta-lamp .fiesta-lamp-body { fill: currentColor; stroke: #FFF0CD; stroke-width: .65; filter: drop-shadow(0 0 3px currentColor); }
+.fiesta-lamp .fiesta-lamp-highlight { fill: #FFF9DC; stroke: none; filter: none; }
+/* Cada color permanece encendido 0.8 s; el siguiente se enciende de golpe. */
+@keyframes fiesta-light-sequence { 0% { opacity: 1; } 25%, 100% { opacity: .10; } }
+@media (prefers-reduced-motion: reduce) {
+  .fiesta-lamp { animation: none !important; opacity: 1 !important; }
+}

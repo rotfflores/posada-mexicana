@@ -1,0 +1,100 @@
+/* Papel picado, flores pintadas y cenefas de talavera; el centro queda libre. */
+:root { --rose: #B85363; --marigold: #DC832F; }
+.invitation::before { background: radial-gradient(ellipse at 50% 32%, #FFFDF4BF, transparent 60%), radial-gradient(ellipse at 0 0, #E8AC4540, transparent 55%); }
+.paper-texture { background: url("assets/cream-paper.png") center top / 940px auto repeat; mix-blend-mode: multiply; opacity: .32; }
+.edge { display: none; }
+.screen::before, .welcome-section::before { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: url("assets/talavera.svg") left top / 19px 19px repeat-y, url("assets/talavera.svg") right top / 19px 19px repeat-y; }
+.screen::after, .welcome-section::after { content: ""; position: absolute; z-index: -1; inset: 28px 31px 46px; border: 1px solid #C83B3266; outline: 1px solid #235C4540; outline-offset: 5px; border-radius: 160px 160px 3px 3px; pointer-events: none; }
+.tile-border { height: 32px; border-top: 3px solid var(--red); border-bottom: 3px solid var(--green); background: url("assets/talavera.svg") left center / 28px 28px repeat-x; }
+.floor-line { bottom: 42px; background: #C83B3280; }
+.sprig { display: none; }
+.flag { opacity: 1; filter: drop-shadow(1px 3px 1px #6D3E1D15); }
+.garland-secondary { position: absolute; z-index: -1; top: -82px; left: 50%; translate: -50% 0; width: max(100%, 1000px); height: 150px; transform: rotate(-3deg); }
+.pink { color: var(--rose); }
+.light ellipse { fill: #FFF1BD; filter: drop-shadow(0 0 7px #E8AC45) drop-shadow(0 0 17px #E8AC45AA); }
+.folk-bouquet { position: absolute; z-index: -1; width: clamp(100px, 18vw, 245px); height: auto; bottom: 29px; pointer-events: none; }
+.folk-bouquet-left { left: 20px; transform: rotate(-8deg); }
+.folk-bouquet-right { right: 20px; transform: scaleX(-1) rotate(-8deg); }
+.folk-crown { display: block; width: 126px; height: 42px; margin: 0 auto 12px; }
+.cover-mark { display: none; }
+.intro-eyebrow { color: var(--red); font-weight: 700; }
+.intro-eyebrow span { height: 3px; background: var(--gold); border-top: 1px solid var(--red); }
+h1 { text-shadow: 1px 2px 0 #E8AC4550; }
+.cover-title { text-shadow: 1px 1px 0 var(--cream), 3px 3px 0 #E8AC4585; }
+.cover-eyebrow { color: var(--green); font-weight: 700; }
+.family-name { color: var(--red); }
+.family-label { color: var(--green); }
+.ornament span, .cover-mark span { width: 58px; height: 3px; background: var(--gold); border-top: 1px solid var(--red); }
+.ornament svg { width: 26px; height: 26px; }
+.details-indicator { font-weight: 600; bottom: 65px; }
+.details-indicator svg { color: var(--red); }
+.little-spark { opacity: 1; }
+.welcome-section { padding-top: 134px; padding-bottom: 104px; }
+.welcome-paper { opacity: .35; }
+.corner-papel { display: none; }
+.welcome-garland { position: absolute; left: 50%; translate: -50% 0; top: -36px; width: max(100%, 980px); height: 165px; pointer-events: none; }
+.welcome-eyebrow { display: inline-block; padding: 9px 22px; color: var(--green); background: #E8AC4560; clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%); }
+.welcome-title { color: var(--red); text-shadow: 1px 1px 0 var(--cream), 2px 3px 0 #E8AC4570; }
+.handwritten-underline::after { height: 9px; }
+.event-date { position: relative; isolation: isolate; }
+.date-halo { position: absolute; z-index: -1; left: 50%; translate: -50% 0; top: 16px; width: 286px; height: 286px; opacity: .19; pointer-events: none; }
+.date-flourish { color: var(--red); }
+.date-flourish svg { width: 20px; height: 20px; }
+.date-flourish span { background: var(--gold); height: 2px; width: 46px; }
+.event-day { text-shadow: 2px 2px 0 var(--cream), 4px 4px 0 #E8AC4570; }
+.event-weekday { font-weight: 700; }
+.countdown-heading { font-size: 23px; }
+.countdown-unit:nth-child(2) dd { color: var(--green); }
+.countdown-unit:nth-child(3) dd { color: #A36620; }
+.countdown-unit + .countdown-unit::before { width: 5px; height: 5px; top: 21px; background: var(--gold); transform: rotate(45deg); }
+.welcome-closing svg { width: 34px; height: 34px; }
+.welcome-closing span { width: 46px; height: 3px; background: var(--gold); border-top: 1px solid var(--red); }
+.welcome-closing { margin-top: 40px; }
+@media (min-width: 850px) {
+  .welcome-section .folk-bouquet { top: 27%; bottom: auto; width: clamp(110px, 16vw, 220px); }
+  .welcome-section .folk-bouquet-left { left: 4%; }
+  .welcome-section .folk-bouquet-right { right: 4%; }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .folk-bouquet { width: 100px; }
+  .welcome-section .folk-bouquet { width: 110px; }
+  .folk-bouquet-left { left: 12px; }.folk-bouquet-right { right: 12px; }
+  .welcome-content { max-width: 580px; }
+}
+@media (max-width: 600px) {
+  .screen { padding-left: 38px; padding-right: 38px; }
+  .screen::before, .welcome-section::before { background-size: 10px 10px; }
+  .screen::after, .welcome-section::after { inset: 17px 19px 41px; outline-offset: 4px; border-radius: 95px 95px 2px 2px; }
+  .garland-secondary { top: -53px; width: 735px; height: 93px; transform: rotate(-5deg); }
+  .folk-bouquet { width: 88px; bottom: 34px; }
+  .folk-bouquet-left { left: -12px; }.folk-bouquet-right { right: -12px; }
+  .folk-crown { width: 108px; height: 37px; margin-bottom: 14px; }
+  .cover-title { font-size: clamp(31px, 9.9vw, 56px); text-shadow: 1px 1px 0 var(--cream), 2px 2px 0 #E8AC4585; }
+  .cover-message { font-size: 13px; }
+  .details-indicator { bottom: 63px; font-size: 9px; }
+  .cover { padding-bottom: 154px; }
+  .welcome-section { padding: 123px 39px 132px; }
+  .welcome-garland { width: 735px; height: 116px; top: -12px; }
+  .welcome-eyebrow { padding: 9px 12px; font-size: 8px; letter-spacing: .08em; }
+  .welcome-title { font-size: clamp(31px, 9vw, 42px); }
+  .welcome-message { font-size: 14px; }
+  .date-halo { width: 256px; height: 256px; top: 12px; }
+  .date-composition { gap: 14px; }
+  .event-month { font-size: 24px; }
+  .countdown-heading { font-size: 19px; }
+  .countdown dd { font-size: clamp(27px, 8.7vw, 39px); }
+  .countdown dt { font-size: 8px; letter-spacing: 0; }
+  .countdown-unit + .countdown-unit::before { top: 16px; width: 4px; height: 4px; }
+  .welcome-closing { margin-top: 32px; }
+  .welcome-closing svg { width: 30px; height: 30px; }
+  .welcome-closing span { width: 26px; }
+}
+@media (max-width: 600px) and (max-height: 620px) {
+  .cover { padding-top: 118px; padding-bottom: 121px; }
+  .folk-crown { height: 29px; margin-bottom: 9px; }
+  .family-block { margin-top: 19px; }
+  .details-indicator { bottom: 54px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

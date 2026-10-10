@@ -1,0 +1,81 @@
+/* Estilos aislados: solo afectan a la sección de ubicación. */
+.loc-section { position: relative; isolation: isolate; overflow: hidden; min-height: 100svh; background: var(--cream); padding: 164px 62px 150px; text-align: center; }
+.loc-section::before { content: ""; position: absolute; z-index: -1; inset: 0; opacity: .33; background: url("assets/cream-paper.png") center / 940px auto repeat; mix-blend-mode: multiply; pointer-events: none; }
+.loc-section::after { content: ""; position: absolute; z-index: -1; inset: 24px 29px 42px; border: 1px solid #C83B3266; outline: 1px solid #235C4540; outline-offset: 5px; border-radius: 130px 130px 2px 2px; pointer-events: none; }
+.loc-rails { position: absolute; z-index: -1; inset: 0; pointer-events: none; background: url("assets/talavera.svg") left top / 19px 19px repeat-y, url("assets/talavera.svg") right top / 19px 19px repeat-y; }
+.loc-papel-string { position: absolute; top: -35px; left: 50%; translate: -50% 0; width: max(100%, 1000px); height: 175px; pointer-events: none; }
+.loc-papel-string-secondary { top: -78px; height: 139px; rotate: -3deg; }
+.loc-papel-string g { transform-origin: 50% 0; animation: loc-paper-sway 7s ease-in-out infinite; animation-play-state: paused; }
+.loc-papel-string-secondary g { animation-delay: -2s; animation-direction: reverse; }
+.loc-section.is-active .loc-papel-string g { animation-play-state: running; }
+.loc-lights { position: absolute; top: 11px; left: 50%; translate: -50% 0; width: max(100%, 950px); height: 122px; pointer-events: none; }
+.loc-bulb { fill: #FFF0AD; stroke: #E8AC45; stroke-width: .8; filter: drop-shadow(0 0 5px #E8AC45) drop-shadow(0 0 11px #E8AC4580); }
+.loc-motion-ready .loc-bulb { opacity: .22; filter: none; }
+.loc-section.is-viewed.loc-motion-ready .loc-bulb { animation: loc-light-on .55s ease both; animation-delay: var(--light-delay); }
+.loc-paper-star { position: absolute; width: 68px; height: 102px; top: 106px; pointer-events: none; filter: drop-shadow(2px 4px 2px #77521A1A); }
+.loc-paper-star-left { left: 7%; rotate: -8deg; }
+.loc-paper-star-right { right: 7%; rotate: 8deg; }
+.loc-header { position: relative; max-width: 840px; margin: 0 auto 33px; }
+.loc-eyebrow { display: inline-block; background: #E8AC4560; color: var(--green); padding: 8px 26px; margin: 0 0 17px; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%); }
+.loc-title { margin: 0 0 21px; color: var(--red); font-family: var(--serif); font-size: clamp(35px, 4.8vw, 60px); font-weight: 400; letter-spacing: -.035em; line-height: 1.15; text-shadow: 1px 1px 0 var(--cream), 2px 3px 0 #E8AC4570; }
+.loc-message { max-width: 520px; margin: 0 auto; color: #626454; font-size: 15px; line-height: 1.9; text-wrap: pretty; }
+.loc-composition { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; gap: 44px; max-width: 1030px; margin: 0 auto; }
+.loc-facade { margin: 0; min-width: 0; }
+.loc-facade img { display: block; width: 100%; height: auto; filter: drop-shadow(0 8px 6px #693C2112); }
+.loc-patio-caption { display: flex; align-items: center; justify-content: center; gap: 12px; margin: -6px auto 20px; color: var(--green); font-family: var(--serif); font-size: clamp(16px, 1.8vw, 21px); line-height: 1.5; }
+.loc-patio-caption::before, .loc-patio-caption::after { content: ""; width: 24px; height: 3px; flex: 0 0 24px; border-block: 1px solid var(--gold); }
+.loc-sign-wrap { min-width: 0; padding-top: 25px; }
+.loc-sign { position: relative; isolation: isolate; padding: 61px 35px 35px; color: var(--green); background: var(--green); clip-path: polygon(15px 0, calc(100% - 15px) 0, calc(100% - 15px) 9px, 100% 9px, 100% calc(100% - 9px), calc(100% - 15px) calc(100% - 9px), calc(100% - 15px) 100%, 15px 100%, 15px calc(100% - 9px), 0 calc(100% - 9px), 0 9px, 15px 9px); transition: opacity .55s ease, transform .55s ease; }
+.loc-sign::before { content: ""; position: absolute; z-index: -1; inset: 7px; border: 2px solid var(--gold); background: var(--cream); box-shadow: inset 0 0 0 4px var(--cream), inset 0 0 0 5px #C83B3266; }
+.loc-sign-board { filter: drop-shadow(0 8px 0 #C83B3220) drop-shadow(0 12px 12px #6E422014); }
+.loc-sign-crown { position: absolute; left: 50%; translate: -50% 0; top: 15px; width: 100px; height: 34px; }
+.loc-place-name { font-family: var(--serif); font-size: clamp(25px, 2.8vw, 34px); font-weight: 400; line-height: 1.25; letter-spacing: -.025em; margin: 0 auto 19px; max-width: 340px; color: var(--red); }
+.loc-address { max-width: 340px; margin: 0 auto; font-style: normal; font-size: 15px; line-height: 1.8; color: var(--green); white-space: pre-line; overflow-wrap: anywhere; text-wrap: pretty; }
+.loc-reference { max-width: 340px; margin: 15px auto 0; font-size: 12px; color: #626454; line-height: 1.75; white-space: pre-line; overflow-wrap: anywhere; }
+.loc-sign-flourish { display: flex; justify-content: center; align-items: center; gap: 13px; margin-top: 22px; color: var(--red); }
+.loc-sign-flourish span { width: 31px; height: 2px; background: var(--gold); }
+.loc-sign-flourish svg { width: 16px; height: 16px; }
+.loc-motion-ready .loc-sign { opacity: 0; transform: translateY(15px); }
+.loc-section.is-viewed .loc-sign { opacity: 1; transform: none; }
+.loc-map-hanger { position: relative; width: min(270px, 100%); margin: 34px auto 0; }
+.loc-map-hanger::before, .loc-map-hanger::after { content: ""; position: absolute; height: 28px; width: 2px; top: -24px; background: #A5895C; z-index: -1; }
+.loc-map-hanger::before { left: 29px; rotate: -7deg; }.loc-map-hanger::after { right: 29px; rotate: 7deg; }
+.loc-map-button { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 56px; padding: 13px 18px; border: 2px solid var(--gold); outline: 3px solid var(--red); outline-offset: 2px; border-radius: 2px; color: var(--cream); background: var(--red); text-decoration: none; font-family: var(--sans); font-size: 15px; font-weight: 600; line-height: 1.5; box-shadow: 0 5px 0 #9E2E2525; touch-action: manipulation; transition: background .2s ease, translate .2s ease; }
+.loc-map-button svg { flex: 0 0 21px; width: 21px; height: 21px; }
+a.loc-map-button:hover { background: #AB3029; translate: 0 -1px; }
+a.loc-map-button:focus-visible { outline: 3px dashed var(--green); outline-offset: 7px; }
+.loc-map-button:disabled { cursor: default; background: var(--green); outline-color: var(--green); color: var(--cream); }
+.loc-map-status { color: var(--green); font-size: 12px; line-height: 1.7; margin: 18px 0 0; }
+.loc-poinsettias { position: absolute; z-index: -1; width: clamp(105px, 15vw, 186px); height: 150px; bottom: 31px; pointer-events: none; }
+.loc-poinsettias-left { left: 27px; }.loc-poinsettias-right { right: 27px; transform: scaleX(-1); }
+@keyframes loc-paper-sway { 0%,100% { transform: rotate(-.65deg); } 50% { transform: rotate(.65deg); } }
+@keyframes loc-light-on { from { opacity: .22; filter: none; } to { opacity: 1; filter: drop-shadow(0 0 5px #E8AC45) drop-shadow(0 0 11px #E8AC4580); } }
+@media (max-width: 760px) {
+  .loc-section { padding: 139px 38px 145px; }
+  .loc-section::after { inset: 18px 19px 42px; border-radius: 95px 95px 2px 2px; outline-offset: 4px; }
+  .loc-rails { background-size: 10px 10px; }
+  .loc-papel-string { width: 790px; height: 130px; top: -25px; }
+  .loc-papel-string-secondary { top: -65px; height: 110px; }
+  .loc-lights { width: 820px; height: 95px; top: -2px; }
+  .loc-paper-star { width: 33px; height: 55px; top: 91px; }
+  .loc-paper-star-left { left: 24px; }.loc-paper-star-right { right: 24px; }
+  .loc-header { margin-bottom: 11px; }
+  .loc-eyebrow { font-size: 9px; padding: 8px 19px; letter-spacing: .12em; margin-bottom: 18px; }
+  .loc-title { font-size: clamp(31px, 8.7vw, 44px); margin-bottom: 21px; }
+  .loc-message { font-size: 14px; line-height: 1.85; }
+  .loc-composition { grid-template-columns: minmax(0, 1fr); gap: 6px; max-width: 490px; }
+  .loc-facade { max-width: 360px; width: 100%; margin: 0 auto; }
+  .loc-sign-wrap { padding-top: 0; }
+  .loc-sign { padding: 59px 25px 29px; }
+  .loc-place-name { font-size: clamp(24px, 6.8vw, 31px); margin-bottom: 17px; }
+  .loc-address { font-size: 14px; }
+  .loc-map-hanger { width: min(245px, calc(100% - 14px)); }
+  .loc-map-button { min-height: 56px; font-size: 14px; }
+  .loc-poinsettias { width: 105px; height: 104px; }
+  .loc-poinsettias-left { left: 12px; }.loc-poinsettias-right { right: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loc-section *, .loc-section *::before, .loc-section *::after { animation: none !important; transition: none !important; }
+  .loc-section .loc-sign { opacity: 1; transform: none; }
+  .loc-section .loc-bulb { opacity: 1; filter: drop-shadow(0 0 5px #E8AC45); }
+}
