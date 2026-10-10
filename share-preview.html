@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imagen de vista previa · Posada de la Familia García</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body { color: #235C45; font-family: "DM Sans", "Segoe UI", sans-serif; }
+    .art { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #FFF6E5 url("assets/cream-paper.png") center / 650px repeat; }
+    .art::before { content: ""; position: absolute; inset: 15px; border: 2px solid #C83B325E; border-radius: 70px 70px 3px 3px; pointer-events: none; }
+    .edge { position: absolute; width: 19px; height: 100%; top: 0; background: url("assets/talavera.svg") center top / 19px repeat-y; }
+    .edge.left { left: 0; }.edge.right { right: 0; }
+    .top { position: absolute; top: 0; width: 100%; height: 144px; }
+    .flags { position: absolute; top: 26px; left: 23px; width: 1154px; height: 100px; }
+    .copy { position: absolute; left: 78px; top: 177px; width: 650px; }
+    .kicker { margin: 0 0 24px; color: #235C45; font-size: 16px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0; font-family: "Bree Serif", Georgia, serif; font-size: 70px; line-height: 1.06; font-weight: 400; letter-spacing: -.045em; text-wrap: balance; }
+    h1 .green { display: block; color: #235C45; }h1 .red { display: block; color: #C83B32; }
+    .family { margin: 27px 0 8px; color: #235C45; font: 400 38px/1.2 "Bree Serif", Georgia, serif; }
+    .message { margin: 0; font-size: 18px; line-height: 1.5; color: #4D6756; }
+    .date { position: absolute; left: 78px; bottom: 51px; display: flex; align-items: center; gap: 14px; margin: 0; font-size: 18px; font-weight: 700; color: #235C45; }
+    .date::before { content: ""; width: 38px; height: 5px; background: #C83B32; }
+    .scene-frame { position: absolute; right: 63px; top: 154px; width: 405px; height: 407px; padding: 10px; border: 2px solid #C83B32; border-radius: 196px 196px 10px 10px; box-shadow: 0 9px 0 #D89F4B65, 0 19px 25px #235C4520; background: #FFF6E5; }
+    .scene-frame::after { content: ""; position: absolute; inset: 6px; border: 1px solid #E8AC45; border-radius: 190px 190px 7px 7px; pointer-events: none; }
+    .scene { display: block; width: 100%; height: 100%; border-radius: 180px 180px 4px 4px; object-fit: cover; object-position: center 43%; }
+    .flower { position: absolute; left: 684px; bottom: 49px; width: 82px; height: 82px; }
+    .footer { position: absolute; bottom: 0; left: 0; width: 100%; height: 20px; background: #FFF6E5 url("assets/talavera.svg") left center / 20px 20px repeat-x; border-top: 2px solid #C83B32; }
+  </style>
+</head>
+<body>
+  <div class="art" role="img" aria-label="Invitación a la posada de la Familia García, con papel picado y un patio mexicano iluminado">
+    <div class="edge left"></div><div class="edge right"></div>
+    <svg class="top" viewBox="0 0 1200 144" aria-hidden="true"><path d="M-5 11Q600 82 1205 11M-5 57Q600 128 1205 57" fill="none" stroke="#C69B5E" stroke-width="2"/><g fill="#F3C96D"><circle cx="92" cy="30" r="4"/><circle cx="252" cy="50" r="4"/><circle cx="430" cy="67" r="4"/><circle cx="600" cy="71" r="4"/><circle cx="770" cy="67" r="4"/><circle cx="948" cy="50" r="4"/><circle cx="1108" cy="30" r="4"/></g></svg>
+    <svg class="flags" viewBox="0 0 1154 100" aria-hidden="true"><defs><g id="flag"><path d="M0 0h95v70L82 83 68 70 55 83 41 70 27 83 13 70 0 83Z" fill="currentColor"/><path d="M9 8h77v3H9zm0 8h3v50H9zm74 0h3v50h-3z" fill="#FFF6E5"/><path d="M48 21c-8-9-20 2-11 11l11 11 11-11c9-9-3-20-11-11Z" fill="#FFF6E5"/><circle cx="23" cy="46" r="4" fill="#FFF6E5"/><circle cx="72" cy="46" r="4" fill="#FFF6E5"/><path d="m24 62 4-4 4 4-4 4Zm40 0 4-4 4 4-4 4Z" fill="#FFF6E5"/></g></defs><path d="M-20 0Q577 62 1174 0" fill="none" stroke="#C69B5E" stroke-width="2"/><use href="#flag" x="21" y="10" style="color:#C83B32"/><use href="#flag" x="168" y="23" style="color:#E8AC45"/><use href="#flag" x="315" y="32" style="color:#235C45"/><use href="#flag" x="462" y="38" style="color:#C83B32"/><use href="#flag" x="609" y="38" style="color:#E8AC45"/><use href="#flag" x="756" y="32" style="color:#235C45"/><use href="#flag" x="903" y="23" style="color:#C83B32"/><use href="#flag" x="1050" y="10" style="color:#E8AC45"/></svg>
+    <div class="copy"><p class="kicker">Entre luces, ponche y buenos momentos</p><h1><span class="green">¡La posada es en</span><span class="red">nuestra casa!</span></h1><p class="family">Familia García</p><p class="message">Una noche para reunirnos, compartir y celebrar juntos.</p></div>
+    <div class="scene-frame"><img class="scene" src="assets/posada-fachada.svg" alt="" /></div>
+    <svg class="flower" viewBox="0 0 100 100" aria-hidden="true"><g fill="#C83B32" stroke="#FFF6E5" stroke-width="1.5"><path d="M50 50Q27 20 47 4Q69 22 50 50Z"/><path d="M50 50Q72 15 91 34Q77 57 50 50Z"/><path d="M50 50Q88 59 74 88Q48 76 50 50Z"/><path d="M50 50Q30 87 9 68Q24 46 50 50Z"/><path d="M50 50Q4 36 23 18Q44 24 50 50Z"/></g><circle cx="50" cy="50" r="13" fill="#E8AC45"/><circle cx="50" cy="50" r="6" fill="#235C45"/></svg>
+    <p class="date">Sábado 19 de diciembre · 7:00 p. m.</p>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

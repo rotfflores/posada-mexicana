@@ -6,6 +6,12 @@ Entrada interactiva, portada, bienvenida con fecha y cuenta regresiva, ubicació
 
 Ejecuta `npm run dev` y abre http://localhost:4173. También puedes abrir `index.html` directamente.
 
+## Vista previa al compartir por WhatsApp
+
+La imagen de la invitación está en `assets/posada-whatsapp.png` (1200 × 630 px, 154 KB). `index.html` incluye las etiquetas Open Graph y la URL pública proporcionada: `https://posada-dorada.rotfstudio.com/`. Al compartir esa URL, WhatsApp puede leer el título, la descripción y la imagen desde el HTML, antes de ejecutar JavaScript. El archivo local `file://` y `localhost` no son compartibles con otras personas.
+
+El diseño editable de la imagen está en `share-preview.html`. Si cambias la familia, la fecha o los textos de la invitación, actualiza esa composición y vuelve a exportarla como `assets/posada-whatsapp.png`; ajusta también las etiquetas `og:title`, `og:description` y `og:image:alt`. Si cambia la URL pública, modifica `canonical`, `og:url`, `og:image`, `og:image:secure_url` y `twitter:image` en `index.html`. Publica juntos `index.html` y `assets/posada-whatsapp.png` en esa URL. WhatsApp puede conservar en caché una vista previa antigua durante un tiempo.
+
 ## Personalizar
 
 Edita `content.js` para cambiar los textos. `\n` agrega un salto de línea. Los colores y las tipografías están en las variables al inicio de `styles.css`. Bree Serif y DM Sans se cargan desde Google Fonts; sin conexión se usan Georgia y Segoe UI.
